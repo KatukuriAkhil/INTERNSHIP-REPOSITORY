@@ -1,0 +1,226 @@
+!--  Project -13 
+My Portfolio Website.  -->
+<!-- Html -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <style>
+      * {
+        line-height: 1.6;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        margin: 0;
+        background-color: rgba(230, 255, 255, 0.5);
+      }
+
+      header {
+        width: 100%;
+        padding: 15px;
+        text-align: center;
+        background-color: rgba(0, 0, 120, 0.8);
+        color: white;
+      }
+
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 10px 0;
+      }
+
+      nav ul li {
+        display: inline-block;
+        margin: 0 10px;
+      }
+
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      nav ul li a:hover {
+        text-decoration: underline;
+      }
+
+      main {
+        padding: 20px;
+      }
+
+      section {
+        margin-bottom: 30px;
+        padding: 15px;
+        border: 1px solid #ccc;
+        background-color: white;
+        border-radius: 10px;
+      }
+
+      h2 {
+        border-bottom: 2px solid rgba(0, 0, 120, 0.4);
+        padding-bottom: 5px;
+      }
+
+      article {
+        background-color: #f0f8ff;
+        padding: 10px;
+        border-radius: 8px;
+        margin-bottom: 10px;
+      }
+
+      form table {
+        width: 100%;
+      }
+
+      form input[type="text"],
+      form input[type="email"],
+      form input[type="number"] {
+        width: 90%;
+        padding: 6px;
+        margin: 4px 0;
+      }
+
+      input[type="submit"] {
+        padding: 8px 20px;
+        background-color: rgba(0, 0, 120, 0.7);
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: rgba(0, 0, 120, 1);
+      }
+
+      footer {
+        text-align: center;
+        width: 100%;
+        padding: 20px;
+        background-color: rgba(0, 0, 120, 0.8);
+        color: white;
+      }
+
+      .social-links a {
+        margin: 0 10px;
+        text-decoration: none;
+        color: darkblue;
+        font-weight: bold;
+      }
+
+      .social-links a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>MY PORTFOLIO WEBSITE</h1>
+      <nav>
+        <ul>
+          <li><a href="#aboutme">About Me</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#hobbies">Hobbies</a></li>
+          <li><a href="#contactme">Contact Me</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="aboutme">
+        <h2>About Me</h2>
+        <p>
+          Hello! I am <strong>K. Akhil</strong>, currently pursuing B.Tech in Computer Science.
+          I am passionate about web development and love building creative websites and apps.
+          I enjoy exploring new technologies and continuously learning.
+        </p>
+      </section>
+
+      <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+          <li>HTML, CSS, JavaScript</li>
+          <li>Java and C Programming</li>
+          <li>Responsive Web Design</li>
+          <li>Problem Solving and Debugging</li>
+          <li>Git and GitHub</li>
+        </ul>
+      </section>
+
+      <section id="education">
+        <h2>Education</h2>
+        <p><strong>B.Tech in Computer Science</strong> - JNTUK (Expected Graduation: 2026)</p>
+        <p><strong>Intermediate</strong> - MPC Stream (Completed in 2022)</p>
+        <p><strong>SSC</strong> - Passed with distinction</p>
+      </section>
+
+      <section id="projects">
+        <h2>My Projects</h2>
+        <article>
+          <h3>Project 1: Weather App</h3>
+          <p><strong>Description:</strong> A web app to check weather forecasts for different cities.</p>
+        </article>
+        <article>
+          <h3>Project 2: Calculator App</h3>
+          <p><strong>Description:</strong> A basic calculator built using JavaScript and CSS for simple math operations.</p>
+        </article>
+        <article>
+          <h3>Project 3: Travel Website</h3>
+          <p><strong>Description:</strong> A static website with travel destination details using HTML, CSS, and JavaScript.</p>
+        </article>
+      </section>
+
+      <section id="hobbies">
+        <h2>Hobbies</h2>
+        <ul>
+          <li>Playing cricket</li>
+          <li>Watching tech videos</li>
+          <li>Exploring gadgets</li>
+          <li>Reading articles on programming</li>
+        </ul>
+      </section>
+
+      <section id="contactme">
+        <h2>Contact Me</h2>
+        <form>
+          <table>
+            <tr>
+              <td><label for="name">Name :</label></td>
+              <td><input type="text" id="name" name="name" placeholder="Enter Your Name" /></td>
+            </tr>
+            <tr>
+              <td><label for="Email">Email :</label></td>
+              <td><input type="email" id="Email" name="Email" /></td>
+            </tr>
+            <tr>
+              <td><label for="contact">Phone No:</label></td>
+              <td><input type="number" id="contact" name="contact" /></td>
+            </tr>
+            <tr>
+              <td colspan="2"><input type="submit" value="Submit" /></td>
+            </tr>
+          </table>
+        </form>
+      </section>
+
+      <section class="social-links">
+        <h2>Follow Me</h2>
+        <p>
+          <a href="#">GitHub</a> |
+          <a href="#">LinkedIn</a> |
+          <a href="#">Instagram</a>
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      &copy; 2025 Akhil, All Rights Reserved
+    </footer>
+  </body>
+</html>
