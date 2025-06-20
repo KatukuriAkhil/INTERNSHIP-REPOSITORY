@@ -1,0 +1,158 @@
+<!--  project-5 
+sticky navigation bar -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airlines details</title>
+   
+ <style>
+
+      .totalmain{
+        
+        border:2px solid black;
+        width:96vw;
+        display:flex;
+        flex-direction:column;
+        
+      }
+      .head {
+        border:1px solid black;
+        text-align: center;
+        background-color:#abf;
+        box-sizing:border-box;
+      }
+
+      .navbar{
+        position:sticky;
+        top:0px;
+        background-color:#abc;
+        border:1px solid black;
+      }
+      .navbar ul{
+        list-style-type:none;
+        display:flex;
+      }
+      .navbar ul li{
+        padding-right:20px;
+      }
+      .navbar ul li a{
+        text-decoration:none;
+        color:white;
+        
+      }
+      
+      .main{
+        box-sizing:border-box;
+        height:80vh;
+        width:96vw;
+       
+        display:flex;
+     
+       
+      }
+      .main .insidemain{
+        box-sizing:border-box;
+        height:95%;
+        flex:100%;
+        margin:20px;
+        padding:20px;
+       
+       border:1px solid black;
+       box-shadow:3px 3px 3px grey;
+      
+       
+      }
+     .flight{
+        width:15em;
+        height:auto;
+      }
+      .content{
+        display:flex;
+        flex-direction:column;
+        box-sizing:border-box;
+        height:50vh;
+        border:1px solid black;
+        border-radius:20px;
+        margin:20px;
+        justify-content:center;
+        align-items: center;
+        padding:20px;
+          box-shadow:3px 3px 3px grey;
+      
+      }
+      .foot{
+
+        border:2px solid black;
+        padding:20px;
+        text-align: center;
+        box-sizing:border-box;
+        background-color:#abf;
+      }
+     
+    </style>
+  </head>
+  <body>
+   <div class="totalmain">
+    
+    <div class="head">
+      <header><h1>WW3 - Airlines guide</h1>
+      <p>Look out the newly launched aircrafts</p></header>
+    </div>
+    
+    <div class="navbar">
+      <nav>
+            <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">New</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#services">Services</a></li>
+          </ul>
+          
+      </nav>
+    </div>
+    
+    <div class="main">
+      
+      <div class="insidemain" id="about">
+        <h2>Recently Launched</h2>
+        <h3>Boeing 787 Dreamliner :</h3>
+        <p>
+        
+          The Boeing 787 Dreamliner is a long-haul, wide-body, twin-engine jet developed by Boeing. It is designed for efficiency and passenger comfort, used by major airlines around the world.
+       </p>
+
+        <ul>
+           <li><strong>Fuel Efficient</strong></li>
+           <li><strong>Passenger Comfort</strong></li>
+           <li><strong>Advanced Technology</strong> </li>
+       </ul>
+       
+       <img class="flight" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRztpFr14oMFkIuW06qhMCSlrBkkKjMenQHA8I4kqSW1oAJn2boBbYrdL1L&s=10" width="50">
+      </div>
+      
+      
+      
+    </div>
+    
+    <div class="content" id="services">
+      <h2>services : </h2>
+      <p>
+  The Boeing 787 Dreamliner offers 
+  a range of in-flight services 
+  including spacious seating with 
+  better legroom, personal entertainment 
+  screens, Wi-Fi connectivity, improved cabin air quality, mood lighting, and USB charging ports at every seat to enhance passenger comfort on long-haul flights.
+</p>
+    </div>
+    
+    <div class="foot" id="contact">
+      <footer>&copy; airlines , all rights reserved <br><br> 
+      to contact us : <br>mail : xyz@gmail.com</footer>
+    </div>
+   
+   </div>
+  </body>
+</html>
