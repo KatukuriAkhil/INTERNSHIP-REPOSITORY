@@ -1,0 +1,107 @@
+<!-- Project -11 
+  A simple Website -->
+<!--  simple. html -->
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My First Website</title>
+
+ 
+  <link rel="icon" href="https://www.w3schools.com/favicon.ico" type="image/x-icon">
+
+ 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+ <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="flex navbar-parent w-100 h-100">
+    <div class="logo-div">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTceX4iXPFaN336OP0NnRhxqqzKoqOBK8leBDMxMHwLfi1mxRk689rployp&s=10" alt="logo" width="80">
+    </div>
+    <nav class="flex">
+      <div class="nav-link">Home</div>
+      <div class="nav-link">Features</div>
+      <div class="nav-link">Course</div>
+      <div class="nav-link">About</div>
+      <div class="nav-link">Contact</div>
+    </nav>
+  </header>
+
+  <!-- Main Section -->
+  <main class="flex main-parent h-100">
+    <div class="flex main-left col">
+      <h1>IDEAS?</h1>
+      <h3>This is just a placeholder.</h3>
+      <p>
+        "Beneath a sky smeared with twilight, the wind whispered secrets to the leaves 
+        while distant stars blinked patiently above. Somewhere, a cat tiptoed across a 
+        rooftop like a shadow chasing silence."
+      </p>
+      <button class="flex btn center" id="btn-id">Try it now</button>
+    </div>
+    <div class="flex main-right center">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGebLwSanRvv2747TH1wRJjd3huJ8CjRjD2K8kff3UrQ2qswD0OSWY8Jw&s=10" alt="box image">
+    </div>
+  </main>
+
+  <!-- Section with Paragraphs -->
+  <section class="flex sections col h-100">
+    <h3>This is a placeholder</h3>
+    <div class="flex para-sections">
+      <p>
+        The silver moonlight filtered softly through the canopy of ancient trees, casting 
+        dappled shadows on the forest floor. Somewhere in the distance, an owl hooted once, 
+        then fell silent. Marlowe adjusted the strap of his satchel and stepped carefully 
+        over a gnarled root...
+      </p>
+      <p>
+        His journey had brought him far from the city's hum, into a realm where time felt 
+        slower, thoughts ran deeper, and secrets lay just beneath the surface of moss and stone.
+      </p>
+    </div>
+  </section>
+
+  <!-- Article & Aside Section -->
+  <div class="flex div_1">
+    <article class="div_1_1 art">
+      <h3>Benefits of HTML</h3>
+      <ol>
+        <li>Easy to learn</li>
+        <li>Supported by all browsers</li>
+        <li>Helps structure content</li>
+        <li>Foundation of web dev</li>
+      </ol>
+    </article>
+
+    <aside class="div_1_2 asi">
+      <h3>Related Links</h3>
+      <ol>
+        <li>HTML Tutorial</li>
+        <li>CSS Basics</li>
+        <li>JavaScript Guide</li>
+      </ol>
+    </aside>
+  </div>
+
+  <!-- Footer -->
+  <footer class="flex footer h-100">
+    <div class="copyright">
+      Raj <sup>&copy;</sup> 2025 All Rights Reserved
+    </div>
+    <div class="flex social-icons">
+      <i class="fab fa-facebook"></i>
+      <i class="fab fa-google-plus"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-snapchat"></i>
+    </div>
+  </footer>
+
+</body>
+</html>
