@@ -1,0 +1,89 @@
+<!-- Project - 4 : Responsive Photo Gallery using Float -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photo Gallery</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      padding: 10px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .gallery {
+      width: 100%;
+      overflow: hidden; /* clears floats */
+    }
+
+    .photo-box {
+      width: 100%;
+      height: 200px;
+      float: left;
+      margin: 2px;
+      overflow: hidden;
+    }
+
+    .photo-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* Medium screens - tablets (2 columns) */
+    @media screen and (min-width: 600px) {
+      .photo-box {
+        width: 48%;
+        height: 250px;
+      }
+    }
+
+    /* Large screens - desktops (3 columns) */
+    @media screen and (min-width: 900px) {
+      .photo-box {
+        width: 32%;
+        height: 250px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Photo Gallery</h1>
+
+  <div class="gallery">
+    <div class="photo-box">
+      <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?auto=format&fit=crop&w=400&q=80" alt="photo">
+    </div>
+    <div class="photo-box">
+      <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=400&q=80" alt="photo">
+    </div>
+    <div class="photo-box">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRztpFr14oMFkIuW06qhMCSlrBkkKjMenQHA8I4kqSW1oAJn2boBbYrdL1L&s=10" alt="photo">
+    </div>
+    <div class="photo-box">
+      <img src="https://picsum.photos/id/1015/400/300" alt="photo">
+    </div>
+    <div class="photo-box">
+      <img src="https://picsum.photos/id/1025/400/300" alt="photo">
+    </div>
+    <div class="photo-box">
+      <img src="https://picsum.photos/id/1035/400/300" alt="photo">
+    </div>
+  </div>
+
+</body>
+</html>
