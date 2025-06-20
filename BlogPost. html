@@ -1,0 +1,103 @@
+<!-- Project - 3 :
+Blog post -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Post</title>
+  <style>
+    body{
+    
+      font-family: sans-serif;
+      
+    }
+    .container{
+      background-color:#ebead3;
+      padding:20px;
+      border:2px solid black;
+      box-sizing border-box
+    }
+    h1{
+      font-size:30px;
+      padding:10px;
+      text-align:center;
+      background-color:#f7f36f;
+      box-shadow:3px 3px 3px grey;
+    
+    }
+    h2{
+     
+      margin:10px;
+    }
+    .main{
+      padding:20px;
+      border:1px solid black; 
+      box-shadow: 2px 2px 3px grey;
+      border-radius:10px;
+      margin-bottom: 20px;
+      
+    }
+   .intro{
+      border:1px solid black;
+      padding: 10px;
+      box-shadow: 2px 2px 3px grey;
+      border-radius:10px;
+    }
+    img{
+      margin-bottom:10px auto;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+ <article>
+    
+     <h1>Airlines Blog</h1>
+     <p><strong>Author :</strong> K . Akhil</p>
+     <date datetime="2025-06-01">June 01 , 2025</date>
+  
+     <p class="intro">Air travel is known as one of the safest 
+     modes of transportation. Yet, recent 
+     airline crashes have raised serious questions about safety protocols and technological reliability. 
+    </p>
+ 
+  <section class="main">
+   <h2>The Major Factors</h2>
+   <h3>1.Technical Failures</h3>
+     <ul>
+        <li>System Malfunctions
+            Crashes due to engine or autopilot failure.
+            One 2024 crash linked to ignored updates.
+        </li>
+        <li> Old Aircraft
+             Aging planes face structural issues.
+             Old fleet caused a crash in Africa
+        </li>
+     </ul>
+ 
+   <h3>2. Weather Challenges</h3>
+     <ul>
+        <li>Storms & Turbulence
+           Extreme weather causing mid-air crashes.
+           Radar failed in a 2025 cyclone case.
+        </li>
+        <li>Low Visibility
+             Fog led to landing errors.
+             A plane missed runway in 2025.
+       </li>
+      </ul>
+   </section>
+   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRztpFr14oMFkIuW06qhMCSlrBkkKjMenQHA8I4kqSW1oAJn2boBbYrdL1L&s=10 " width="100%">
+ </article>
+
+  <section>
+  <form>
+    
+   Comment about the blog :<br><br><textarea name="comments" rows="7" cols="40"></textarea>
+  </form>
+  </section>
+</div>
+</body>
+</html>
