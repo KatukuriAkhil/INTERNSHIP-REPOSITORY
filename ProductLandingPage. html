@@ -1,0 +1,54 @@
+<!-- Project-2  product landing page --> 
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Landing Page</title>
+  <style>
+   body{
+     font-family: sans-serif;
+     padding:20px;
+     
+   
+   }
+   .content{
+     padding:20px;
+     margin:10px;
+     border:2px solid black;
+     border-radius:10px;
+     box-shadow:5px 5px 6px #ebdcc3;
+   }
+   
+   input,button{
+     padding:5px;
+     margin:5px;
+   }
+   
+   
+  </style>
+</head>
+<body>
+  <div class="content">
+    <h1>The Best Product</h1>
+    <p>to fulfill all your needs<br>
+       try to get it fast 
+    </p>
+    <button>Buy Now</button>
+    
+    <h2>Sign up for our newsletter</h2>
+    <form>
+      <label for="name">Name :</label>
+      <input type="text" Id="name" name="name"><br>
+      <label for="mail">Email  : </label>
+      <input type="email" Id="mail" name="mail"><br>
+      <label for="updates">Receive Updates : </label>
+      <input type="checkbox" id="updates" name="updates">Yes
+      <br><br>
+      <button>Submit</button>
+    </form>
+  </div>
+
+</body>
+</html>
