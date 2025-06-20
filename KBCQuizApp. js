@@ -1,0 +1,257 @@
+/* KBC QUIZ application  JS */
+
+document.addEventListener("DOMContentLoaded", () => {
+  const questionPool = [
+    {
+      question: "Which planet is known as the Red Planet?",
+      options: ["Earth", "Venus", "Mars", "Jupiter"],
+      correctIndex: 2,
+    },
+    {
+      question: "Who wrote the play 'Romeo and Juliet'?",
+      options: ["William Shakespeare", "Charles Dickens", "Leo Tolstoy", "Mark Twain"],
+      correctIndex: 0,
+    },
+    {
+      question: "Which gas is most abundant in the Earth's atmosphere?",
+      options: ["Oxygen", "Nitrogen", "Carbon Dioxide", "Argon"],
+      correctIndex: 1,
+    },
+    {
+      question: "Which country is called the Land of the Rising Sun?",
+      options: ["China", "Australia", "New Zealand", "Japan"],
+      correctIndex: 3,
+    },
+    {
+      question: "What is the capital of Australia?",
+      options: ["Sydney", "Melbourne", "Canberra", "Brisbane"],
+      correctIndex: 2,
+    },
+    {
+      question: "HTML stands for?",
+      options: [
+        "Hyper Text Markup Language",
+        "Home Tool Markup Language",
+        "Hyperlinks and Text Markup Language",
+        "Hyper Tool Mark Language",
+      ],
+      correctIndex: 0,
+    },
+    {
+      question: "Which year did India gain independence?",
+      options: ["1945", "1947", "1950", "1952"],
+      correctIndex: 1,
+    },
+    {
+      question: "Who is known as the father of Geometry?",
+      options: ["Archimedes", "Pythagoras", "Aristotle", "Euclid"],
+      correctIndex: 3,
+    },
+    {
+      question: "Which organ in the human body filters blood?",
+      options: ["Liver", "Kidneys", "Heart", "Lungs"],
+      correctIndex: 1,
+    },
+    {
+      question: "What is the speed of light?",
+      options: ["3 x 10^5 m/s", "3 x 10^6 m/s", "3 x 10^8 m/s", "3 x 10^10 m/s"],
+      correctIndex: 2,
+    },
+    {
+      question: "CSS stands for?",
+      options: [
+        "Computer Style Sheets",
+        "Creative Style Sheets",
+        "Colorful Style Sheets",
+        "Cascading Style Sheets",
+      ],
+      correctIndex: 3,
+    },
+    {
+      question: "Which is the largest mammal on Earth?",
+      options: ["African Elephant", "Blue Whale", "Humpback Whale", "Giraffe"],
+      correctIndex: 1,
+    },
+    {
+      question: "Who developed the theory of relativity?",
+      options: ["Nikola Tesla", "Albert Einstein", "Niels Bohr", "Isaac Newton"],
+      correctIndex: 1,
+    },
+    {
+      question: "Which planet is the largest in our Solar System?",
+      options: ["Earth", "Saturn", "Jupiter", "Neptune"],
+      correctIndex: 2,
+    },
+    {
+      question: "Who painted the Mona Lisa?",
+      options: ["Vincent van Gogh", "Leonardo da Vinci", "Pablo Picasso", "Claude Monet"],
+      correctIndex: 1,
+    },
+    {
+      question: "Which language is primarily used for styling web pages?",
+      options: ["HTML", "CSS", "Python", "JavaScript"],
+      correctIndex: 1,
+    },
+    {
+      question: "The Pythagorean theorem applies to which shape?",
+      options: ["Square", "Right-angled triangle", "Circle", "Equilateral triangle"],
+      correctIndex: 1,
+    },
+    {
+      question: "Which is the smallest prime number?",
+      options: ["1", "2", "3", "5"],
+      correctIndex: 1,
+    },
+    {
+      question: "Who was the first man to step on the Moon?",
+      options: ["Buzz Aldrin", "Yuri Gagarin", "Neil Armstrong", "Michael Collins"],
+      correctIndex: 2,
+    },
+    {
+      question: "How many continents are there on Earth?",
+      options: ["5", "6", "7", "8"],
+      correctIndex: 2,
+    },
+    // Extra 10 Questions Added by me :
+    {
+      question: "Which element has the chemical symbol 'O'?",
+      options: ["Gold", "Oxygen", "Osmium", "Oxide"],
+      correctIndex: 1,
+    },
+    {
+      question: "Which Indian state is famous for the festival 'Onam'?",
+      options: ["Tamil Nadu", "Kerala", "Karnataka", "Andhra Pradesh"],
+      correctIndex: 1,
+    },
+    {
+      question: "Who invented the light bulb?",
+      options: ["Thomas Edison", "Alexander Graham Bell", "Nikola Tesla", "Isaac Newton"],
+      correctIndex: 0,
+    },
+    {
+      question: "Which device is used to measure temperature?",
+      options: ["Barometer", "Thermometer", "Altimeter", "Hygrometer"],
+      correctIndex: 1,
+    },
+    {
+      question: "Which river is the longest in the world?",
+      options: ["Amazon", "Ganges", "Nile", "Yangtze"],
+      correctIndex: 2,
+    },
+    {
+      question: "Which language has the most native speakers worldwide?",
+      options: ["English", "Hindi", "Mandarin Chinese", "Spanish"],
+      correctIndex: 2,
+    },
+    {
+      question: "In which sport is the term 'Love' used?",
+      options: ["Football", "Basketball", "Tennis", "Cricket"],
+      correctIndex: 2,
+    },
+    {
+      question: "What does RAM stand for?",
+      options: ["Read and Move", "Run Access Memory", "Random Access Memory", "Rapid Action Mode"],
+      correctIndex: 2,
+    },
+    {
+      question: "What is the boiling point of water?",
+      options: ["50°C", "90°C", "100°C", "120°C"],
+      correctIndex: 2,
+    },
+    {
+      question: "Which Indian city is known as the 'City of Joy'?",
+      options: ["Mumbai", "Hyderabad", "Kolkata", "Chennai"],
+      correctIndex: 2,
+    }
+  ];
+
+  
+  let questions = [];
+  let currentIndex = 0;
+  let score = 0;
+  const totalQuestions = 10;
+
+  const quiz = document.getElementById("quiz");
+  const questionNumberEl = document.getElementById("question-number");
+  const questionTextEl = document.getElementById("question-text");
+  const optionsListEl = document.getElementById("options-list");
+  const nextButton = document.getElementById("next-button");
+  const scoreboardEl = document.getElementById("scoreboard");
+  const scoreMessageEl = document.getElementById("score-message");
+  const restartButton = document.getElementById("restart-button");
+
+  initializeQuiz();
+
+  function initializeQuiz() {
+    questions = shuffleArray(questionPool).slice(0, totalQuestions);
+    currentIndex = 0;
+    score = 0;
+    quiz.classList.remove("hidden");
+    scoreboardEl.classList.add("hidden");
+    displayQuestion();
+  }
+
+  function displayQuestion() {
+    clearOptions();
+    const currentQuestion = questions[currentIndex];
+    questionNumberEl.textContent = `Question ${currentIndex + 1} of ${totalQuestions}`;
+    questionTextEl.textContent = currentQuestion.question;
+
+    currentQuestion.options.forEach((optionText, index) => {
+      const li = document.createElement("li");
+      li.textContent = optionText;
+      li.addEventListener("click", () => handleOptionClick(index));
+      optionsListEl.appendChild(li);
+    });
+
+    nextButton.disabled = true;
+    nextButton.textContent = currentIndex === totalQuestions - 1 ? "Finish" : "Next Question";
+  }
+
+  function handleOptionClick(selectedIndex) {
+    const currentQuestion = questions[currentIndex];
+    const correctIndex = currentQuestion.correctIndex;
+
+    const optionsLi = optionsListEl.querySelectorAll("li");
+    optionsLi.forEach((li, idx) => {
+      if (idx === correctIndex) li.classList.add("correct-option");
+      if (idx === selectedIndex && selectedIndex !== correctIndex) li.classList.add("incorrect-option");
+      li.style.pointerEvents = "none";
+    });
+
+    if (selectedIndex === correctIndex) score++;
+    nextButton.disabled = false;
+  }
+
+  function clearOptions() {
+    optionsListEl.innerHTML = "";
+  }
+
+  nextButton.addEventListener("click", () => {
+    currentIndex++;
+    if (currentIndex < totalQuestions) {
+      displayQuestion();
+    } else {
+      endQuiz();
+    }
+  });
+
+  function endQuiz() {
+    quiz.classList.add("hidden");
+    scoreboardEl.classList.remove("hidden");
+    scoreMessageEl.textContent = `You scored ${score} out of ${totalQuestions}!`;
+  }
+
+  restartButton.addEventListener("click", () => {
+    initializeQuiz();
+  });
+
+  function shuffleArray(array) {
+    const arr = [...array];
+    for (let i = arr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr;
+  }
+});
