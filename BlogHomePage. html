@@ -1,0 +1,52 @@
+<!-- Project - 8
+Blog home  -->
+
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Home</title>
+  <style>
+  body{
+    border:2px solid black;
+    border-radius:10px;
+    
+  }
+    h1 {
+      text-align: center;
+    }
+    article {
+      padding:30px;
+      margin: 30px;
+      border: 2px solid black;
+      box-shadow: 5px 5px 5px grey;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Blog Posts</h1>
+  
+  <article>
+    <h2>1. The Impact of Technology on Education</h2>
+    <p>By Akhil | <time datetime="2025-06-01">June 1, 2025</time></p>
+    <p>Technology has revolutionized education by enabling digital learning, online classes, and access to global resources. Students today can learn at their own pace using interactive platforms.</p>
+    <a href="https://www.eschoolnews.com/it-leadership/2023/12/11/the-impact-of-technology-on-education/" >Read more</a>  </article>
+  
+  <article>
+    <h2>2. Climate Change and Its Effects</h2>
+    <p>By Akhil | <time datetime="2025-06-02">June 2, 2025</time></p>
+    <p>Climate change has led to extreme weather events, rising sea levels, and melting glaciers. It is crucial to take urgent actions like reducing carbon emissions and promoting renewable energy.</p>
+    <a href="https://www.noaa.gov/education/resource-collections/climate/climate-change-impacts " >Read more</a> 
+  </article>
+  
+  <article>
+    <h2>3. Benefits of Daily Exercise</h2>
+    <p>By Akhil | <time datetime="2025-06-03">June 3, 2025</time></p>
+    <p>Regular physical activity helps improve mental health, boosts energy levels, and reduces the risk of chronic diseases. Simple activities like walking or cycling can make a big difference.</p>
+    <a href="https://www.nhs.uk/live-well/exercise/exercise-health-benefits/ " >Read more</a> 
+  </article>
+  
+</body>
+</html>
