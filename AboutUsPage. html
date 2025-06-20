@@ -1,0 +1,84 @@
+<-- Project- 7
+ About Us page  -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <style>
+    body {
+      padding: 5px;
+    }
+    .sec {
+      box-sizing:border-box;
+      padding:30px;
+      margin: 15px auto;
+      
+      border: 1px solid black;
+      background-color: lightgrey;
+    }
+    div{
+      border:1px solid black;
+      text-align: center;
+   
+      height:30vh;
+      padding:10px;
+      background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmweYVvFT0qylNOfnEVoxSabihSclwnlQxFUD0pafMDrZPGx_9fhSeLN4G&s=10');
+    }
+    h1{
+      color:white;
+    }
+    nav ul{
+      list-style-type:none;
+      display:flex;
+      gap:30px;
+      color:white;
+    }
+  </style>
+</head>
+<body>
+<div>
+  <h1>About Our Company</h1>
+  <nav>
+    <ul>
+     <li>Home</li>
+     <li>About Us</li>
+     <li>Contact Us</li>
+   </ul>
+  </nav>
+</div>
+
+  <section class="sec ourhistory">
+    <h2>Our History</h2>
+    <p>Our company was founded in 2020 with the vision of transforming the digital landscape through innovative technology solutions.</p>
+    <ul>
+      <li>Established during the rise of digital transformation.</li>
+      <li>Started with a small but passionate team.</li>
+      <li>Expanded operations across multiple countries by 2023.</li>
+    </ul>
+  </section>
+
+  <section class="sec ourmission">
+    <h2>Our Mission</h2>
+    <p>We strive to deliver high-quality products and services that empower businesses and enhance user experiences worldwide.</p>
+    <ul>
+      <li>Commit to customer satisfaction and innovation.</li>
+      <li>Focus on sustainable and scalable technology.</li>
+      <li>Encourage creativity and continuous improvement.</li>
+    </ul>
+  </section>
+
+  <section class="sec ourteam">
+    <h2>Our Team</h2>
+    <p>Our team is made up of skilled professionals who are dedicated to driving innovation, collaboration, and excellence in everything we do.</p>
+    <ul>
+      <li>Experts in software development, design, and marketing.</li>
+      <li>Collaborative and inclusive work culture.</li>
+      <li>Regular training and upskilling programs.</li>
+    </ul>
+  </section>
+
+</body>
+</html>
