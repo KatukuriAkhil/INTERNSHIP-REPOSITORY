@@ -1,0 +1,97 @@
+<!-- Project- 10
+Our Services page  -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services</title>
+  <style>
+    body {
+      background-color: #ebe4d8;
+    }
+
+    .card {
+      width: 95%;
+      border: 1px solid #aaa;
+      padding: 20px;
+      margin: 10px 2%;
+      box-shadow: 3px 3px 5px grey;
+      background-color: #f2e6d0;
+    }
+
+    .container {
+      width: 95vw;
+      height: auto;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      border: 2px solid black;
+      box-sizing: border-box;
+      padding:10px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    @media screen and (min-width: 600px) {
+      .card {
+        width: 80%;
+        margin: 20px auto;
+      }
+    }
+
+    @media screen and (min-width: 900px) {
+      .card {
+        width: 40%;
+        margin: 20px auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Our Services</h1>
+  <div class="container">
+    <div class="card">
+      <h3>Web Development</h3>
+      <p>We create modern and fully responsive websites tailored to your business needs.</p>
+      <ul>
+        <li>HTML, CSS, JavaScript Development</li>
+        <li>Mobile-Friendly Design</li>
+        <li>Custom Features Integration</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>SEO Optimization</h3>
+      <p>Our SEO strategies help your website rank higher in search engine results.</p>
+      <ul>
+        <li>Keyword Research</li>
+        <li>On-page and Off-page SEO</li>
+        <li>Performance Monitoring</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Graphic Design</h3>
+      <p>We design eye-catching visuals to make your brand stand out in the crowd.</p>
+      <ul>
+        <li>Logo and Branding</li>
+        <li>Social Media Graphics</li>
+        <li>Marketing Materials</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Digital Marketing</h3>
+      <p>Promote your business online through effective digital marketing solutions.</p>
+      <ul>
+        <li>Social Media Campaigns</li>
+        <li>Email Marketing</li>
+        <li>Google Ads & Analytics</li>
+      </ul>
+    </div>
+  </div>
+
+</body>
+</html>
