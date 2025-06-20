@@ -1,0 +1,110 @@
+<!-- Project-6 
+Product listing page  --> 
+
+<!DOCTYPE html>  
+<html>  
+<head>  
+ <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Listing</title>  
+  <style>  
+  
+   body{  
+     padding:10px;
+     font-family:;
+   }  
+   .product{  
+     box-sizing:border-box;  
+     border:1px solid black;  
+     border-radius:20px;  
+     box-shadow:3px 3px 3px grey;  
+     margin:20px auto;  
+     padding:20px;  
+   }  
+   button{  
+     padding:10px;  
+     margin:10px;  
+     border-radius:20px;  
+     background-color:#eaebd1;  
+   }  
+   .soldout{  
+     color:red;  
+   }  
+   h1{
+     text-align: center;
+     border:1px solid black;
+     box-shadow:3px 3px 3px grey;
+     padding:20px;
+     margin:10px;
+   }
+     
+  </style>  
+</head>  
+<body>  
+  
+  <h1>Our Products</h1>  
+    
+  <div class="product">  
+    <h2>Wireless Headphones</h2>  
+    <p>Experience immersive sound with noise cancellation and 20-hour battery life.</p>  
+    <p>price : $100</p>  
+    <button>add to cart</button>  
+  </div>  
+    
+  <div class="product">  
+    <h2>Eco-Friendly Notebook</h2>  
+    <p>Made from recycled paper, perfect for school and office use.</p>  
+    <p>price : $10</p>  
+    <button>add to cart</button>  
+  </div>  
+    
+  <div class="product soldout">  
+    <h2>Fitness Tracker</h2>  
+    <p>Monitors heart rate, steps, and sleep with a sleek display.</p>  
+    <p>price : $100</p>  
+    <button>add to cart</button>  
+  </div>  
+    
+  <div class="product">  
+    <h2>Portable Speaker</h2>  
+    <p>Waterproof Bluetooth speaker with 12-hour playback time.</p>  
+    <p>price : $120</p>  
+    <button>add to cart</button>  
+  </div>  
+    
+    
+  <div class="product soldout">  
+    <h2>Stylish Pen Set</h2>  
+    <p>Pack of 5 metal body pens with smooth ink flow and comfort grip.</p>  
+    <p>price : $20</p>  
+    <button>add to cart</button>  
+  </div>  
+    
+    
+  <div class="product">  
+    <h2>USB Flash Drive</h2>  
+    <p>32GB storage with fast data transfer and sleek design.</p>  
+    <p>price : $30</p>  
+    <button>add to cart</button>  
+  </div>  
+    
+    
+  <div class="product soldout">  
+    <h2>LED Keychain Light</h2>  
+    <p>Mini flashlight with bright beam and durable build.</p>  
+    <p>price : $5</p>  
+    <button>add to cart</button>  
+  </div>  
+    
+    
+  <div class="product">  
+    <h2>Mobile Stand</h2>  
+    <p>Adjustable desk stand suitable for smartphones and tablets.</p>  
+    <p>price : $10</p>  
+    <button>add to cart</button>  
+  </div>  
+    
+    
+  
+</body>  
+</html>
