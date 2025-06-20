@@ -1,0 +1,59 @@
+<!--  Project - 9 
+FAQ section  -->
+
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ</title>
+  <style>
+    body {
+      padding: 20px;
+      background-color:#e3eeff;
+      border:2px solid black;
+    }
+    li {
+      margin: 20px 0px;
+    }
+    .question {
+      font-weight: bold;
+    }
+    .answer {
+      margin-left: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Frequently Asked Questions</h1>
+  <hr>
+  <ul>
+    <li>
+      <span class="question">Q : What is this website?</span>
+      <div class="answer">A : A sample FAQ section using HTML.</div>
+    </li>
+    <li>
+      <span class="question">Q : How do I contact you?</span>
+      <div class="answer">A : Use the contact form on the homepage.</div>
+    </li>
+    <li>
+      <span class="question">Q : Can I access this site on mobile?</span>
+      <div class="answer">A : Yes, the site is mobile-responsive and works well on all devices.</div>
+    </li>
+    <li>
+      <span class="question">Q : Is registration required to read content?</span>
+      <div class="answer">A : No registration is needed. All content is freely accessible.</div>
+    </li>
+    <li>
+      <span class="question">Q : Who maintains this website?</span>
+      <div class="answer">A : The website is maintained by a group of tech enthusiasts led by Akhil.</div>
+    </li>
+    <li>
+      <span class="question">Q : How often is content updated?</span>
+      <div class="answer">A : Content is reviewed and updated weekly to ensure accuracy and relevance.</div>
+    </li>
+  </ul>
+
+</body>
+</html>
